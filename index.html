@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Magí's BlackJack</title>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="./css/blackjackstyle.css">
+    </head>
+    <body>
+        <main>
+            <header>
+                <h1>Welcome to Magi's Blackjack</h1>    
+            </header>
+            <section class="panel">
+                <aside>
+                    <div class="options">
+                        <button id="deal" class="btn active">Play!</button>
+                        <button id="hit" class="btn active" disabled>Hit!</button>
+                        <button id="stand" class="btn active" disabled>Stand!</button>
+                    </div>
+                    <div class="content-money">
+                        <div class="apuesta">
+                            <label for="apuesta">Wager:</label>
+                            <input id="apuesta" type="text" value="100">
+                        </div>
+                        <div class="money">
+                            <img src="./img/coin.png" class="moneda">
+                        </div>
+                    </div>
+                </aside>
+                <section class="tablero">
+                    <div class="zona-tablero casino">
+                        <div class="letrero">
+                            <h1>Dealer's Hand<span></span></h1>
+                        </div>
+                        
+                        <div id="dealer-cards" class="content-cards">
+                        </div>
+                    </div>
+        
+        
+                    <div class="zona-tablero player">
+                        <div class="letrero">
+                            <h1>Player's Hand<span></span></h1>
+                        </div>
+                        
+                        <div id="player-cards" class="content-cards">
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </main>
+        
+        <script src="./js/lib/jquery-3.5.1.min.js"></script>
+        <script src="./js/blackjack.js"></script>
+    </body>    
+</html>
